@@ -1,2 +1,2 @@
 # azure_flask_deployment
-azure flask deployment, class 3
+HHA 504 Homework Assignment 2
