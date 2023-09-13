@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Data Table</title>
+</head>
+<body>
+    <h1>Data Table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <!-- Replace these with your actual column names -->
+                <th>Neighborhood</th>
+                <th>Id</th>
+                <th>Estimate; Aggregate household income in the past 12 months in 2015 Inflation-adjusted dollars</th>
+                <th>Margin of Error; Aggregate household income in the past 12 months in 2015 Inflation-adjusted dollars</th>
+                <!-- Add more table headers as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for index, row in data.iterrows() %}
+            <tr>
+                <!-- Replace these with the actual column names from your CSV file -->
+                <td>{{ row['Neighborhood'] }}</td>
+                <td>{{ row['Id'] }}</td>
+                <td>{{ row['Estimate; Aggregate household income in the past 12 months in 2015 Inflation-adjusted dollars'] }}</td>
+                <td>{{ row['Margin of Error; Aggregate household income in the past 12 months in 2015 Inflation-adjusted dollars'] }}</td>
+                <!-- Add more table data columns as needed -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
