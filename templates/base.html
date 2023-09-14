@@ -20,6 +20,7 @@
                 <li><a href="/about" class="hover:underline">About</a></li>
                 <li><a href="/data" class="hover:underline">Data</a></li>
                 <li><a href="/contact" class="hover:underline">Contact</a></li>
+                <li><a href="/message us" class="hover:underline">Message Us</a></li>
             </ul>
         </nav>
     </header>
@@ -28,6 +29,15 @@
 <section class="mb-6">
     <h2 class="text-xl mb-2">Welcome</h2>
     <p>We are a cloud computing company that specializes in managing patient data. Helping people manage their data is essential in the digital age, where individuals generate and interact with vast amounts of information. Some of the services we offer include data storage solutions, data organization tools, data backup and recovery, and data security measures. Effective data management solutions should empower individuals to have control over their data, protect their privacy, and make informed decisions based on their information and research. User empowerment and data secuirty should be at the forefront of any data management strategy.</p>
+</section>
+{% endif %}
+
+    {% if request.path == '/' %}
+<section class="mb-6">
+    <h3 class="text-xl mb-2">FAQ</h3>
+    <p><strong>1. How do I contact the company?</strong> Go to the "Message Us" tab in the top left corner and you will be able to send us a message.</p>
+    <p><strong>2. I told my physician about this company but she has not heard of it, but I am interested in learning more, how can I go about this?</strong> We are a fairly new company, but we are glad to hear that you are interested. If you go the contact tab in the top left corner, you will found all of our contact information.</p>
+    <P><strong>3. What type of services are offered?</strong> Check out our "About" tab in the top left corner for more information on the services we offer.</P>
 </section>
 {% endif %}
 

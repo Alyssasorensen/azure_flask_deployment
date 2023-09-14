@@ -17,6 +17,10 @@ def data(data=df):
     data = data.sample(15)
     return render_template('data.html', data=data)
 
+@app.route('/message us')
+def messageus():
+    return render_template('messageus.html')
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
