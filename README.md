@@ -1,3 +1,5 @@
+### Deployed URL of my application: https://alyssa-504-flask.azurewebsites.net/
+
 # **A Guide on How to Set Up and Deploy a Flask Application Using HTML and Azure App Service**
 
 ### *Overview: This guide will help you establish a Flask application, merging it with data handling using Pandas, and deploying the application on Azure App Service. Additionally, you will have the opportunity to enhance your skills in documenting the workflow and utilizing GitHub for project administration and management.*
