@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Healthcare App</title>
+    <title>My Healthcare App</title>
     
     <!-- Tailwind CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body class="bg-gray-200">
 
     <header class="bg-blue-600 text-white p-4">
-        <h1 class="text-2xl">Welcome to My Healthcare App</h1>
+        <h1 class="text-2xl">My Healthcare App</h1>
         <nav>
             <ul class="flex space-x-4">
                 <li><a href="/" class="hover:underline">Home</a></li>
@@ -23,6 +23,14 @@
             </ul>
         </nav>
     </header>
+
+    {% if request.path == '/' %}
+<section class="mb-6">
+    <h2 class="text-xl mb-2">Welcome</h2>
+    <p>We are a cloud computing company that specializes in managing patient data. Helping people manage their data is essential in the digital age, where individuals generate and interact with vast amounts of information. Some of the services we offer include data storage solutions, data organization tools, data backup and recovery, and data security measures. Effective data management solutions should empower individuals to have control over their data, protect their privacy, and make informed decisions based on their information and research. User empowerment and data secuirty should be at the forefront of any data management strategy.</p>
+</section>
+{% endif %}
+
 
     <main class="p-4">
 
